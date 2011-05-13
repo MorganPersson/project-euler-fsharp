@@ -1,7 +1,7 @@
 ﻿open System.IO
 open System
 
-let fileName = @"C:\code\F#\Euler\Euler\names.txt"
+let fileName = @"names.txt"
 
 let loadFile f =
     let p = Path.GetFullPath(fileName) 
