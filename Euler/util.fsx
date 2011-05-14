@@ -1,5 +1,4 @@
-﻿
-module Util
+﻿module Util
     open System.Diagnostics
     open System.Threading
 
