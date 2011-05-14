@@ -37,11 +37,27 @@
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <ItemGroup>
+    <None Include="util.fsx" />
     <None Include="1.fsx" />
     <None Include="2.fsx" />
     <None Include="3.fsx" />
     <None Include="4.fsx" />
     <None Include="5.fsx" />
+    <None Include="6.fsx" />
+    <None Include="7.fsx" />
+    <None Include="8.fsx" />
+    <None Include="9.fsx" />
+    <None Include="10.fsx" />
+    <None Include="11.fsx" />
+    <None Include="12.fsx" />
+    <None Include="13.fsx" />
+    <None Include="14.fsx" />
+    <None Include="15.fsx" />
+    <None Include="16.fsx" />
+    <None Include="18.fsx" />
+    <None Include="67.fsx" />
+    <None Include="20.fsx" />
+    <None Include="22.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
