@@ -54,12 +54,15 @@
     <None Include="14.fsx" />
     <None Include="15.fsx" />
     <None Include="16.fsx" />
+    <None Include="17.fsx" />
     <None Include="18.fsx" />
-    <None Include="67.fsx" />
     <None Include="20.fsx" />
+    <None Include="21.fsx" />
     <None Include="22.fsx" />
     <None Include="25.fsx" />
     <None Include="30.fsx" />
+    <None Include="48.fsx" />
+    <None Include="67.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
