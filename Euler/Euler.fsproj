@@ -59,6 +59,7 @@
     <None Include="20.fsx" />
     <None Include="21.fsx" />
     <None Include="22.fsx" />
+    <None Include="24.fsx" />
     <None Include="25.fsx" />
     <None Include="30.fsx" />
     <None Include="48.fsx" />
