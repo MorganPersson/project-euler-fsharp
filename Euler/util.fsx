@@ -1,6 +1,4 @@
 ﻿module Util
-    open System.Diagnostics
-    open System.Threading
 
     let isPrime n =
         if (n=1) then 
