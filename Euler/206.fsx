@@ -7,27 +7,25 @@ let expected = "1_2_3_4_5_6_7_8_9_0"
 let max = Convert.ToInt64(Math.Sqrt(Convert.ToDouble(1929394959697989990L))) + 1L
 let min = (Convert.ToInt64(Math.Sqrt(Convert.ToDouble(1020304050607080900L))) / 10L) * 10L
 
-let asString x = 
-    let s = x.ToString()
-    let strLen = s.Length
-    let rec build idx strAcc = 
-        match idx<strLen with
-            | false -> strAcc
-            | true -> match (idx%2) with
-                        | 0 -> build (idx + 1) (strAcc + s.Substring(idx, 1))
-                        | _ -> build (idx + 1) (strAcc + "_")
-    build 0 ""
+let isCorrect x =
+    let rec check value num = 
+        match value with
+        | 0L when num = 0L -> true
+        | 0L when num > 0L -> false
+        | _ -> let m = value%10L
+               match m - num with
+               | 0L -> check (value / 100L) (num-1L)
+               | _ -> false
+    check (x / 100L) 9L
 
 
 let rec find x =
-    let y = x*x
-    //printfn "%d :: %d" x y
-    let s = asString y
-    match x >= max with
-        | true -> -1L
-        | false -> match s with
-                    | "1_2_3_4_5_6_7_8_9_0" -> x
-                    | _ -> find (x + 10L)
+    let y = (x*x)
+    let s = isCorrect y
+    match s with
+        | true -> x
+        | _ when (x < max) -> find (x + 10L)
+        | _ -> -1L
 
 printfn "%d -> %d" min max
 let answer = find min
