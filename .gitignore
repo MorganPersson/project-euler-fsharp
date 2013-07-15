@@ -1,0 +1,10 @@
+﻿
+bin
+obj
+*.suo
+*.user
+
+*_ReSharper*
+*.resharper.*
+
+[bB]ackup
