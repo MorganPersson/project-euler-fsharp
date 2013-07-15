@@ -9,8 +9,9 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Euler</RootNamespace>
     <AssemblyName>Euler</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <Name>Euler</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -42,6 +43,9 @@
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="(!Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')) And (!Exists('$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets')) And (Exists('$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets'))" />
   <ItemGroup>
     <None Include="206.fsx" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="util.fsx" />
     <None Include="1.fsx" />
     <None Include="2.fsx" />
@@ -72,6 +76,7 @@
     <None Include="67.fsx" />
     <None Include="35.fsx" />
     <None Include="44.fsx" />
+    <None Include="23.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
